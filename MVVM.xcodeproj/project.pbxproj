@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E08672302422946B0098D830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086722F2422946B0098D830 /* AppDelegate.swift */; };
 		E08672322422946B0098D830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08672312422946B0098D830 /* SceneDelegate.swift */; };
-		E08672342422946B0098D830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08672332422946B0098D830 /* ViewController.swift */; };
 		E08672372422946B0098D830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08672352422946B0098D830 /* Main.storyboard */; };
 		E086723A2422946B0098D830 /* MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E08672382422946B0098D830 /* MVVM.xcdatamodeld */; };
 		E086723C242294730098D830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E086723B242294730098D830 /* Assets.xcassets */; };
 		E086723F242294730098D830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E086723D242294730098D830 /* LaunchScreen.storyboard */; };
 		E086724A242294730098D830 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0867249242294730098D830 /* MVVMTests.swift */; };
 		E0867255242294730098D830 /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0867254242294730098D830 /* MVVMUITests.swift */; };
+		E08672682423540A0098D830 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08672672423540A0098D830 /* User.swift */; };
+		E086726A242359690098D830 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0867269242359690098D830 /* NetworkManager.swift */; };
+		E086726B24235D830098D830 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08672332422946B0098D830 /* UserViewController.swift */; };
+		E086726D242360AD0098D830 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086726C242360AD0098D830 /* UserViewModel.swift */; };
+		E086726F242362E60098D830 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086726E242362E60098D830 /* UserCell.swift */; };
+		E086727224236BA40098D830 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E086727124236BA40098D830 /* Kingfisher */; };
+		E086727524237A5E0098D830 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = E086727424237A5E0098D830 /* Reachability */; };
+		E086727924237CA30098D830 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086727824237CA30098D830 /* OfflineViewController.swift */; };
+		E086727B242384540098D830 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086727A242384540098D830 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 		E086722C2422946B0098D830 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E086722F2422946B0098D830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08672312422946B0098D830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E08672332422946B0098D830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E08672332422946B0098D830 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E08672362422946B0098D830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E08672392422946B0098D830 /* MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM.xcdatamodel; sourceTree = "<group>"; };
 		E086723B242294730098D830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		E0867250242294730098D830 /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0867254242294730098D830 /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		E0867256242294730098D830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E08672672423540A0098D830 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E0867269242359690098D830 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E086726C242360AD0098D830 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E086726E242362E60098D830 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E086727824237CA30098D830 /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		E086727A242384540098D830 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E086727224236BA40098D830 /* Kingfisher in Frameworks */,
+				E086727524237A5E0098D830 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +117,13 @@
 		E086722E2422946B0098D830 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E0867263242352BC0098D830 /* Model */,
+				E0867266242352E40098D830 /* View */,
+				E0867265242352C90098D830 /* ViewModel */,
+				E0867264242352C30098D830 /* Controller */,
+				E0867262242352B10098D830 /* Network Manager */,
 				E086722F2422946B0098D830 /* AppDelegate.swift */,
 				E08672312422946B0098D830 /* SceneDelegate.swift */,
-				E08672332422946B0098D830 /* ViewController.swift */,
 				E08672352422946B0098D830 /* Main.storyboard */,
 				E086723B242294730098D830 /* Assets.xcassets */,
 				E086723D242294730098D830 /* LaunchScreen.storyboard */,
@@ -131,6 +151,48 @@
 			path = MVVMUITests;
 			sourceTree = "<group>";
 		};
+		E0867262242352B10098D830 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E0867269242359690098D830 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		E0867263242352BC0098D830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E08672672423540A0098D830 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0867264242352C30098D830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E086727A242384540098D830 /* BaseViewController.swift */,
+				E08672332422946B0098D830 /* UserViewController.swift */,
+				E086727824237CA30098D830 /* OfflineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0867265242352C90098D830 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E086726C242360AD0098D830 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0867266242352E40098D830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E086726E242362E60098D830 /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +209,10 @@
 			dependencies = (
 			);
 			name = MVVM;
+			packageProductDependencies = (
+				E086727124236BA40098D830 /* Kingfisher */,
+				E086727424237A5E0098D830 /* Reachability */,
+			);
 			productName = MVVM;
 			productReference = E086722C2422946B0098D830 /* MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +285,10 @@
 				Base,
 			);
 			mainGroup = E08672232422946B0098D830;
+			packageReferences = (
+				E086727024236BA40098D830 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E086727324237A5E0098D830 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+			);
 			productRefGroup = E086722D2422946B0098D830 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,9 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08672342422946B0098D830 /* ViewController.swift in Sources */,
+				E086726F242362E60098D830 /* UserCell.swift in Sources */,
+				E086726B24235D830098D830 /* UserViewController.swift in Sources */,
+				E086727B242384540098D830 /* BaseViewController.swift in Sources */,
+				E086726A242359690098D830 /* NetworkManager.swift in Sources */,
 				E08672302422946B0098D830 /* AppDelegate.swift in Sources */,
+				E086727924237CA30098D830 /* OfflineViewController.swift in Sources */,
 				E08672322422946B0098D830 /* SceneDelegate.swift in Sources */,
+				E08672682423540A0098D830 /* User.swift in Sources */,
+				E086726D242360AD0098D830 /* UserViewModel.swift in Sources */,
 				E086723A2422946B0098D830 /* MVVM.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +664,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E086727024236BA40098D830 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.2;
+			};
+		};
+		E086727324237A5E0098D830 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E086727124236BA40098D830 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E086727024236BA40098D830 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E086727424237A5E0098D830 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E086727324237A5E0098D830 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E08672382422946B0098D830 /* MVVM.xcdatamodeld */ = {
