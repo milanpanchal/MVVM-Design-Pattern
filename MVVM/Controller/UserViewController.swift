@@ -45,7 +45,7 @@ class UserViewController: BaseViewController {
         let totalUserLimit = Int.random(in: 5 ... 100)
 
         NetworkManager.sharedInstance.fetchUsers(withLimit: totalUserLimit) { [weak self] (users) in
-            self?.usersVM = users.map({ UserViewModel(user: $0)})
+            self?.usersVM = users.map({ return UserViewModel(user: $0)})
             DispatchQueue.main.async {
                 self?.tblView.reloadData()
                 self?.navigationItem.title = "Users (\(users.count))"
