@@ -38,5 +38,21 @@ class MVVMTests: XCTestCase {
         XCTAssertEqual([user.cell, user.phone].joined(separator: " / "), userViewModel.contactNumber)
 
     }
+    
+    func testFetchUserList() {
+        
+        let exp = expectation(description: "fetching users from server")
+        
+        let networkManager = NetworkManager.sharedInstance
+        networkManager.fetchUsers { (users) in
+            XCTAssertNotNil(users, "users should not be nil")
+            XCTAssertTrue(users.count > 0, "users should not be empty")
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10.0) { (error) in
+            print(error?.localizedDescription ?? "error")
+        }
+    }
 
 }
