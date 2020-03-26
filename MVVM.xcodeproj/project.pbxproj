@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E084A080242CB4F400138158 /* UserFetchPerf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084A07F242CB4F400138158 /* UserFetchPerf.swift */; };
 		E08672302422946B0098D830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086722F2422946B0098D830 /* AppDelegate.swift */; };
 		E08672322422946B0098D830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08672312422946B0098D830 /* SceneDelegate.swift */; };
 		E08672372422946B0098D830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08672352422946B0098D830 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E084A07F242CB4F400138158 /* UserFetchPerf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchPerf.swift; sourceTree = "<group>"; };
 		E086722C2422946B0098D830 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E086722F2422946B0098D830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E08672312422946B0098D830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				E0867249242294730098D830 /* MVVMTests.swift */,
+				E084A07F242CB4F400138158 /* UserFetchPerf.swift */,
 				E086724B242294730098D830 /* Info.plist */,
 			);
 			path = MVVMTests;
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E084A080242CB4F400138158 /* UserFetchPerf.swift in Sources */,
 				E086724A242294730098D830 /* MVVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
